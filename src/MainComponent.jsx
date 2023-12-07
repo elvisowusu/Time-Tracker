@@ -44,9 +44,9 @@ function MainComponent() {
            <div className='w-full lg:grid-cols-3'>
             <div className='bg-red-500 rounded-xl relative overflow-hidden h-[15rem]'>
                     <div className='flex justify-end item px-[2rem] bg-Lightredwork h-[3rem] absolute w-full'><img className={`w-[4.1rem] absolute -top-2`} src={work} alt="" /></div>
-                    <div className='bg-Darkblue rounded-xl w-full absolute top-[2rem]'>
-                        <div className='flex lg:flex-col items-center justify-between px-[2rem]'><p>Work</p><img src={ellipsis} alt="image" /></div>
-                        <div className='flex lg:flex-col items-center justify-between px-[2rem]'><p>32hrs</p><p>Last week - 36hrs</p></div>
+                    <div className='bg-Darkblue rounded-xl w-full absolute top-[2rem] px-[2rem]'>
+                        <div className='flex items-center justify-between '><p className='text-PaleBlue'>Work</p><img src={ellipsis} alt="image" /></div>
+                        <div className='flex lg:flex-col items-center justify-between'><p className='text-PaleBlue'>32hrs</p><p className='text-Desaturatedblue'>Last week - 36hrs</p></div>
                     </div>
             </div>
            </div>
