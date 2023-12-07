@@ -42,11 +42,11 @@ function MainComponent() {
 
 
            <div className='w-full lg:grid-cols-3'>
-            <div className='bg-red-500 rounded-2xl relative overflow-hidden h-[15rem]'>
+            <div className='rounded-2xl relative overflow-hidden h-[11.3rem]'>
                     <div className='flex justify-end item px-[1rem] bg-Lightredwork h-[3.7rem] absolute w-full'><img className={`w-[4.8rem] absolute -top-[0.6rem]`} src={work} alt="" /></div>
-                    <div className='bg-Darkblue rounded-2xl w-full absolute top-[2.5rem] px-[1.8rem] py-[2rem]'>
-                        <div className='flex items-center justify-between '><p className='text-PaleBlue font-medium'>Work</p><img src={ellipsis} alt="image" /></div>
-                        <div className='flex lg:flex-col items-center justify-between'><p className='text-PaleBlue text-[2rem]'>32hrs</p><p className='text-Desaturatedblue'>Last week - 36hrs</p></div>
+                    <div className='bg-Darkblue rounded-2xl w-full absolute top-[2.5rem] px-[1.8rem] py-[1.8rem]'>
+                        <div className='mb-2 flex items-center justify-between '><p className='text-PaleBlue font-semibold text-[1.2rem]'>Work</p><img src={ellipsis} alt="image" /></div>
+                        <div className='flex lg:flex-col items-center justify-between'><p className='text-PaleBlue text-[2rem]'>32hrs</p><p className='text-Desaturatedblue font-medium'>Last week - 36hrs</p></div>
                     </div>
             </div>
            </div>
