@@ -47,8 +47,8 @@ function MainComponent() {
                 icons.map((iconItems)=>{
                     return <div className='rounded-2xl relative overflow-hidden h-[11.3rem] lg:h-[15.6rem] xl:h-[16rem] w-[21.4rem] lg:w-[16rem] xl:w-[18rem]'>
                                 <div className={`flex justify-end item px-[1rem] ${iconItems.color} h-[3.7rem] absolute w-full`}><img className={`w-[4.8rem] absolute -top-[0.6rem]`} src={iconItems.icon} alt="" /></div>
-                                <div className='bg-Darkblue hover:bg-Desaturatedblue rounded-2xl w-full absolute top-[2.5rem] px-[1.8rem] py-[1.8rem]'>
-                                    <div className='mb-2 flex items-center justify-between '><p className='text-white font-semibold text-[1.2rem]'>{iconItems.category}</p><img src={ellipsis} alt="image" /></div>
+                                <div className='bg-Darkblue cursor-pointer hover:bg-Desaturatedblue rounded-2xl w-full absolute top-[2.5rem] px-[1.8rem] py-[1.8rem]'>
+                                    <div className='mb-2 flex items-center justify-between '><p className='text-white font-medium text-[1.2rem]'>{iconItems.category}</p><img src={ellipsis} alt="image" /></div>
                                     <div className='flex lg:flex-col items-center lg:items-start justify-between'><p className='text-white text-[2rem] lg:text-[3.7rem]'>{iconItems.time}</p><p className='text-PaleBlue font-medium'>Last week - {iconItems.lastWeek}hrs</p></div>
                                 </div>
                             </div>
