@@ -25,12 +25,12 @@ function MainComponent() {
 
     return (
         <div className='flex flex-col items-center bg-Verydarkblue px-[1.5rem] py-[6rem]'>
-           <div className='bg-Darkblue w-full rounded-xl'>
-                <div className='flex items-center gap-[0.9rem] bg-BlueColor rounded-xl px-[2rem] py-[2rem]'>
+           <div className='bg-Darkblue w-full rounded-2xl'>
+                <div className='flex items-center gap-[0.9rem] bg-BlueColor rounded-2xl px-[1.8rem] py-[2rem]'>
                     <img className='w-[4.6rem] border-2 rounded-full' src={Jeremy} alt="image" />
                     <p ><span className='block text-Desaturatedblue font-medium'>Report for </span><span className='text-PaleBlue text-[1.5rem] lg:text-[2rem]'>Jeremy Robsom</span></p>
                 </div>
-                <p className='flex lg:flex-col items-center justify-between px-[2rem] py-[1.3rem]'>
+                <p className='flex lg:flex-col items-center justify-between px-[1.8rem] py-[1.3rem]'>
                     {
                         JeremyProfile.map((Jeremy)=>{
                             return <span className='allText'>{Jeremy}</span>
@@ -42,9 +42,9 @@ function MainComponent() {
 
 
            <div className='w-full lg:grid-cols-3'>
-            <div className='bg-red-500 rounded-xl relative overflow-hidden h-[15rem]'>
-                    <div className='flex justify-end item px-[2rem] bg-Lightredwork h-[3rem] absolute w-full'><img className={`w-[4.1rem] absolute -top-2`} src={work} alt="" /></div>
-                    <div className='bg-Darkblue rounded-xl w-full absolute top-[2rem] px-[2rem]'>
+            <div className='bg-red-500 rounded-2xl relative overflow-hidden h-[15rem]'>
+                    <div className='flex justify-end item px-[1rem] bg-Lightredwork h-[3.7rem] absolute w-full'><img className={`w-[4.8rem] absolute -top-[0.6rem]`} src={work} alt="" /></div>
+                    <div className='bg-Darkblue rounded-2xl w-full absolute top-[2.5rem] px-[1.8rem] py-[2]'>
                         <div className='flex items-center justify-between '><p className='text-PaleBlue'>Work</p><img src={ellipsis} alt="image" /></div>
                         <div className='flex lg:flex-col items-center justify-between'><p className='text-PaleBlue'>32hrs</p><p className='text-Desaturatedblue'>Last week - 36hrs</p></div>
                     </div>
