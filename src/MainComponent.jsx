@@ -42,10 +42,10 @@ function MainComponent() {
 
 
            <div className='w-full lg:grid-cols-3'>
-            <div className={`rounded-xl`}>
-                    <div className='flex justify-end item px-[2rem] bg-Lightredwork relative h-[2.1rem] overflow-hidden'><img className={`w-[4.1rem] absolute -top-2`} src={work} alt="" /></div>
-                    <div className='bg-Darkblue'>
-                        <div className='flex items-center justify-between'><p>Work</p><img src={ellipsis} alt="" /></div>
+            <div className='bg-red-500 rounded-xl relative overflow-hidden h-[15rem]'>
+                    <div className='flex justify-end item px-[2rem] bg-Lightredwork h-[3rem] absolute w-full'><img className={`w-[4.1rem] absolute -top-2`} src={work} alt="" /></div>
+                    <div className='bg-Darkblue rounded-xl w-full absolute top-[2rem]'>
+                        <div className='flex items-center justify-between'><p>Work</p><img src={ellipsis} alt="image" /></div>
                     </div>
             </div>
            </div>
