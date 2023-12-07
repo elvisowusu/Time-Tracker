@@ -27,8 +27,8 @@ function MainComponent() {
         <div className='flex flex-col items-center bg-Verydarkblue'>
            <div className='bg-Darkblue'>
             <div>
-                <div></div>
-                <p></p>
+                <img src={Jeremy} alt="image" />
+                <p ><span className='block'>Report for </span><span>Jeremy Robsom</span></p>
             </div>
             <p className='flex lg:flex-col justify-between'>
                 {
