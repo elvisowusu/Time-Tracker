@@ -24,13 +24,13 @@ function MainComponent() {
 
 
     return (
-        <div className='flex flex-col md:flex-row md:gap-[1.4rem] items-center bg-Verydarkblue px-[1.5rem] py-[6rem]'>
+        <div className='flex flex-col xl:flex-row xl:gap-[1.4rem] items-center bg-Verydarkblue px-[1.5rem] py-[6rem]'>
            <div className='bg-Darkblue w-[21.4rem] rounded-2xl'>
-                <div className='flex md:flex-col md:items-start items-center gap-[0.9rem] bg-BlueColor rounded-2xl px-[1.8rem] py-[2rem]'>
+                <div className='flex xl:flex-col xl:items-start items-center gap-[0.9rem] bg-BlueColor rounded-2xl px-[1.8rem] py-[2rem]'>
                     <img className='w-[4.6rem] border-2 rounded-full' src={Jeremy} alt="image" />
-                    <p ><span className='block text-Desaturatedblue font-medium'>Report for </span><span className='text-PaleBlue text-[1.5rem] md:text-[2.5rem]'>Jeremy Robsom</span></p>
+                    <p ><span className='block text-Desaturatedblue font-medium'>Report for </span><span className='text-PaleBlue text-[1.5rem] xl:text-[2.5rem]'>Jeremy Robsom</span></p>
                 </div>
-                <p className='flex lg:flex-col items-center justify-between px-[1.8rem] py-[1.3rem]'>
+                <p className='flex xl:flex-col xl:items-start xl:gap-3 xl: items-center justify-between px-[1.8rem] py-[1.3rem]'>
                     {
                         JeremyProfile.map((Jeremy)=>{
                             return <span className='allText'>{Jeremy}</span>
@@ -41,7 +41,7 @@ function MainComponent() {
 
 
 
-           <div className='flex flex-col md:grid md:grid-cols-3 gap-[1.3rem] mt-[1.3rem]'>
+           <div className='flex flex-col xl:grid xl:grid-cols-3 gap-[1.3rem] mt-[1.3rem]'>
             {
                 icons.map((iconItems)=>{
                     return <div className='rounded-2xl relative overflow-hidden h-[11.3rem] w-[21.4rem]'>
