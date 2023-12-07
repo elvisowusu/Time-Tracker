@@ -42,8 +42,8 @@ function MainComponent() {
 
 
            <div className='w-full lg:grid-cols-3'>
-            <div className={`relative bg-Lightredwork overflow-hidden rounded-xl`}>
-                    <div className='flex justify-end item px-[2rem]'><img className={`w-[4.1rem]`} src={work} alt="" /></div>
+            <div className={`rounded-xl`}>
+                    <div className='flex justify-end item px-[2rem] bg-Lightredwork relative h-[2.1rem] overflow-hidden'><img className={`w-[4.1rem] absolute -top-2`} src={work} alt="" /></div>
                     <div className='bg-Darkblue'>
                         <div className='flex items-center justify-between'><p>Work</p><img src={ellipsis} alt="" /></div>
                     </div>
