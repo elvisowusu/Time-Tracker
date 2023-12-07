@@ -18,6 +18,9 @@ export default {
           Desaturatedblue: 'hsl(235, 45%, 61%)',
           PaleBlue:'hsl(236, 100%, 87%)',
           Verydarkblue: 'hsl(226, 43%, 10%)',
+      },
+      fontFamily:{
+        'RubikFont': 'Rubik, sans-serif',
       }
     },
   },
