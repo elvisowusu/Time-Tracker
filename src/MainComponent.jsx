@@ -24,10 +24,10 @@ function MainComponent() {
 
 
     return (
-        <div className='flex flex-col items-center bg-Verydarkblue'>
-           <div className='bg-Darkblue'>
-            <div>
-                <img src={Jeremy} alt="image" />
+        <div className='flex flex-col items-center bg-Verydarkblue px-[1.5rem] py-[4rem]'>
+           <div className='bg-Darkblue w-full rounded-xl'>
+            <div className='flex items-center bg-BlueColor rounded-xl'>
+                <img className='w-12 border-2 rounded-full' src={Jeremy} alt="image" />
                 <p ><span className='block'>Report for </span><span>Jeremy Robsom</span></p>
             </div>
             <p className='flex lg:flex-col justify-between'>
