@@ -8,4 +8,7 @@
     .allText{
         @apply text-Desaturatedblue hover:text-PaleBlue font-medium;
     }
+    .jerremyParagraph{
+        @apply flex items-center justify-between px-[1.8rem] py-[1.3rem] xl:flex-col xl:items-start xl:gap-3;
+    }
 }

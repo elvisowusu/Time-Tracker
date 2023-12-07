@@ -30,7 +30,7 @@ function MainComponent() {
                     <img className='w-[4.6rem] border-2 rounded-full' src={Jeremy} alt="image" />
                     <p ><span className='block text-Desaturatedblue font-medium'>Report for </span><span className='text-PaleBlue text-[1.5rem] xl:text-[2.5rem]'>Jeremy Robsom</span></p>
                 </div>
-                <p className='flex xl:flex-col xl:items-start xl:gap-3 xl: items-center justify-between px-[1.8rem] py-[1.3rem]'>
+                <p className='jerremyParagraph'>
                     {
                         JeremyProfile.map((Jeremy)=>{
                             return <span className='allText'>{Jeremy}</span>
