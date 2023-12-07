@@ -24,13 +24,13 @@ function MainComponent() {
 
 
     return (
-        <div className='flex flex-col items-center bg-Verydarkblue px-[1.5rem] py-[4rem]'>
+        <div className='flex flex-col items-center bg-Verydarkblue px-[1.5rem] py-[6rem]'>
            <div className='bg-Darkblue w-full rounded-xl'>
-                <div className='flex items-center bg-BlueColor rounded-xl px-[2rem] py-[1.5rem]'>
+                <div className='flex items-center gap-[0.9rem] bg-BlueColor rounded-xl px-[2rem] py-[2rem]'>
                     <img className='w-[4.6rem] border-2 rounded-full' src={Jeremy} alt="image" />
                     <p ><span className='block text-Desaturatedblue font-medium'>Report for </span><span className='text-PaleBlue text-[1.5rem] lg:text-[2rem]'>Jeremy Robsom</span></p>
                 </div>
-                <p className='flex lg:flex-col justify-between px-[2rem] py-[1.2rem]'>
+                <p className='flex lg:flex-col justify-between px-[2rem] py-[1.3rem]'>
                     {
                         JeremyProfile.map((Jeremy)=>{
                             return <span className='allText'>{Jeremy}</span>
