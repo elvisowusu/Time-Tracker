@@ -24,7 +24,7 @@ function MainComponent() {
 
 
     return (
-        <div className='flex flex-col md:flex-row items-center bg-Verydarkblue px-[1.5rem] py-[6rem]'>
+        <div className='flex flex-col md:flex-row md:gap-[1.4rem] items-center bg-Verydarkblue px-[1.5rem] py-[6rem]'>
            <div className='bg-Darkblue w-[21.4rem] rounded-2xl'>
                 <div className='flex items-center gap-[0.9rem] bg-BlueColor rounded-2xl px-[1.8rem] py-[2rem]'>
                     <img className='w-[4.6rem] border-2 rounded-full' src={Jeremy} alt="image" />
