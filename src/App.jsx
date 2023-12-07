@@ -1,11 +1,12 @@
-import { useState } from 'react'
+// Desc: This is the main entry point for the application
+
+import MainComponent from "./MainComponent"
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <div className='text-[5rem] font-RubikFont'>
-      Hello
+    <div className='font-RubikFont'>
+      <MainComponent/>
     </div>
   )
 }
