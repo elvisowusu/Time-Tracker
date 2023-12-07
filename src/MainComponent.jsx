@@ -7,6 +7,7 @@ import social from './assets/icon-social.svg';
 import study from './assets/icon-study.svg';
 import work from './assets/icon-work.svg';
 import Jeremy from './assets/image-jeremy.png';
+import Aos from 'aos';
 
 function MainComponent() {
 
@@ -44,7 +45,7 @@ function MainComponent() {
            <div className='flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 gap-[1.3rem] lg:gap-[1rem] xl:lg:gap-[2rem] mt-[1.3rem] lg:mt-[0.9rem]'>
             {
                 icons.map((iconItems)=>{
-                    return <div className='rounded-2xl relative overflow-hidden h-[11.3rem] lg:h-[15.6rem] xl:h-[16rem] w-[21.4rem] lg:w-[16rem] xl:w-[18rem]'>
+                    return <div data-aos="fade-up" className='rounded-2xl relative overflow-hidden h-[11.3rem] lg:h-[15.6rem] xl:h-[16rem] w-[21.4rem] lg:w-[16rem] xl:w-[18rem]'>
                                 <div className={`flex justify-end item px-[1rem] ${iconItems.color} h-[3.7rem] absolute w-full`}><img className={`w-[4.8rem] absolute -top-[0.6rem]`} src={iconItems.icon} alt="" /></div>
                                 <div className='bg-Darkblue rounded-2xl w-full absolute top-[2.5rem] px-[1.8rem] py-[1.8rem]'>
                                     <div className='mb-2 flex items-center justify-between '><p className='text-PaleBlue font-semibold text-[1.2rem]'>{iconItems.category}</p><img src={ellipsis} alt="image" /></div>
