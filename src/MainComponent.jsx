@@ -24,11 +24,11 @@ function MainComponent() {
 
 
     return (
-        <div className='flex flex-col xl:flex-row xl:gap-[2rem] items-center justify-center bg-Verydarkblue px-[1.5rem] py-[6rem] xl:h-[100vh]'>
-           <div className='bg-Darkblue w-[21.4rem] xl:w-[19rem] xl:h-[32.8rem] xl:mt-[0.4rem] rounded-2xl'>
-                <div className='flex items-center gap-[0.9rem] xl:gap-[2rem] bg-BlueColor rounded-2xl px-[1.8rem] py-[2rem] xl:flex-col xl:items-start xl:h-[22.6rem]'>
-                    <img className='w-[4.6rem] xl:w-[5.7rem] border-2 rounded-full' src={Jeremy} alt="image" />
-                    <p><span className='block text-Desaturatedblue font-medium '>Report for </span><span className='text-PaleBlue text-[1.5rem] xl:text-[2.8rem] xl:leading-[3.3rem]'>Jeremy Robson</span></p>
+        <div className='flex flex-col lg:flex-row lg:gap-[2rem] items-center justify-center px-[1.5rem] py-[6rem] lg:h-[100vh]'>
+           <div className='bg-Darkblue w-[21.4rem] lg:w-[19rem] lg:h-[32.8rem] lg:mt-[0.4rem] rounded-2xl'>
+                <div className='flex items-center gap-[0.9rem] lg:gap-[2rem] bg-BlueColor rounded-2xl px-[1.8rem] py-[2rem] lg:flex-col lg:items-start lg:h-[22.6rem]'>
+                    <img className='w-[4.6rem] lg:w-[5.7rem] border-2 rounded-full' src={Jeremy} alt="image" />
+                    <p><span className='block text-Desaturatedblue font-medium '>Report for </span><span className='text-PaleBlue text-[1.5rem] lg:text-[2.8rem] lg:leading-[3.3rem]'>Jeremy Robson</span></p>
                 </div>
                 <p className='jerremyParagraph'>
                     {
@@ -41,14 +41,14 @@ function MainComponent() {
 
 
 
-           <div className='flex flex-col xl:grid xl:grid-cols-3 gap-[1.3rem] mt-[1.3rem] xl:mt-[0.9rem]'>
+           <div className='flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 gap-[1.3rem] mt-[1.3rem] lg:mt-[0.9rem]'>
             {
                 icons.map((iconItems)=>{
-                    return <div className='rounded-2xl relative overflow-hidden h-[11.3rem] md:h-[16rem] w-[21.4rem] md:w-[18rem]'>
+                    return <div className='rounded-2xl relative overflow-hidden h-[11.3rem] lg:h-[16rem] w-[21.4rem] lg:w-[18rem]'>
                                 <div className={`flex justify-end item px-[1rem] ${iconItems.color} h-[3.7rem] absolute w-full`}><img className={`w-[4.8rem] absolute -top-[0.6rem]`} src={iconItems.icon} alt="" /></div>
                                 <div className='bg-Darkblue rounded-2xl w-full absolute top-[2.5rem] px-[1.8rem] py-[1.8rem]'>
                                     <div className='mb-2 flex items-center justify-between '><p className='text-PaleBlue font-semibold text-[1.2rem]'>{iconItems.category}</p><img src={ellipsis} alt="image" /></div>
-                                    <div className='flex lg:flex-col items-center justify-between md:items-start'><p className='text-PaleBlue text-[2rem] xl:text-[3.7rem]'>{iconItems.time}</p><p className='text-Desaturatedblue font-medium'>Last week - {iconItems.lastWeek}hrs</p></div>
+                                    <div className='flex lg:flex-col items-center lg:items-start justify-between'><p className='text-PaleBlue text-[2rem] lg:text-[3.7rem]'>{iconItems.time}</p><p className='text-Desaturatedblue font-medium'>Last week - {iconItems.lastWeek}hrs</p></div>
                                 </div>
                             </div>
                 })
