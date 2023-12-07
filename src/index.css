@@ -9,6 +9,6 @@
         @apply text-Desaturatedblue hover:text-PaleBlue font-medium cursor-pointer lg:text-[1rem] xl:text-[1.1rem];
     }
     .jerremyParagraph{
-        @apply flex items-center justify-between px-[1.8rem] py-[1.3rem] xl:flex-col xl:items-start xl:gap-3;
+        @apply flex items-center justify-between px-[1.8rem] py-[1.3rem] lg:flex-col lg:items-start lg:gap-3;
     }
 }
