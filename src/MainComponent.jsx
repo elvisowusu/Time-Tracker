@@ -26,7 +26,7 @@ function MainComponent() {
 
     return (
         <div className='flex flex-col lg:flex-row lg:gap-[1rem] xl:gap-[2rem] items-center justify-center px-[1.5rem] py-[6rem] lg:h-[100vh]'>
-           <div className='bg-Darkblue w-[21.4rem] lg:w-[18rem] xl:w-[19rem] lg:h-[32rem] xl:h-[32.8rem] lg:mt-[0.4rem] rounded-2xl'>
+           heheheh<div className='bg-Darkblue w-[21.4rem] lg:w-[18rem] xl:w-[19rem] lg:h-[32rem] xl:h-[32.8rem] lg:mt-[0.4rem] rounded-2xl'>
                 <div className='flex items-center gap-[0.9rem] lg:gap-[2rem] bg-BlueColor rounded-2xl px-[1.8rem] py-[2rem] lg:flex-col lg:items-start lg:h-[22.6rem]'>
                     <img className='w-[4.6rem] lg:w-[5.7rem] border-2 rounded-full' src={Jeremy} alt="image" />
                     <p><span className='block text-Desaturatedblue font-medium '>Report for </span><span className='text-PaleBlue text-[1.5rem] lg:text-[2.8rem] lg:leading-[3.3rem]'>Jeremy Robson</span></p>
