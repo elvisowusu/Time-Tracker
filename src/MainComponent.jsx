@@ -11,12 +11,12 @@ import Jeremy from './assets/image-jeremy.png';
 function MainComponent() {
 
     const icons =[
-                    {id:1,icon:work,category:'Work',time:'32hrs',color:'Lightredwork',ellipsis:ellipsis},
-                    {id:2,icon:play,category:'Play',time:'10hrs',color:'Softblueplay',ellipsis:ellipsis},
-                    {id:3,icon:study,category:'Study',time:'4hrs',color:'Lightredstudy',ellipsis:ellipsis},
-                    {id:4,icon:exercise,category:'Exercise',time:'4hrs',color:'Limegreenexercise',ellipsis:ellipsis},
-                    {id:6,icon:social,category:'Social',time:'2hrs',color:'Violetsocial',ellipsis:ellipsis},
-                    {id:5,icon:selfCare,category:'Self Care',time:'2hrs',color:'Softorangeselfcare',ellipsis:ellipsis}
+                    {id:1,icon:work,category:'Work',time:'32hrs',color:'bg-Lightredwork',ellipsis:ellipsis},
+                    {id:2,icon:play,category:'Play',time:'10hrs',color:'bg-Softblueplay',ellipsis:ellipsis},
+                    {id:3,icon:study,category:'Study',time:'4hrs',color:'bg-Lightredstudy',ellipsis:ellipsis},
+                    {id:4,icon:exercise,category:'Exercise',time:'4hrs',color:'bg-Limegreenexercise',ellipsis:ellipsis},
+                    {id:6,icon:social,category:'Social',time:'2hrs',color:'bg-Violetsocial',ellipsis:ellipsis},
+                    {id:5,icon:selfCare,category:'Self Care',time:'2hrs',color:'bg-Softorangeselfcare',ellipsis:ellipsis}
                 ]
     const JeremyProfile =['Daily','Weekly','Monthly']
 
@@ -42,13 +42,17 @@ function MainComponent() {
 
 
            <div className='w-full lg:grid-cols-3'>
-            <div className='rounded-2xl relative overflow-hidden h-[11.3rem]'>
-                    <div className='flex justify-end item px-[1rem] bg-Lightredwork h-[3.7rem] absolute w-full'><img className={`w-[4.8rem] absolute -top-[0.6rem]`} src={work} alt="" /></div>
-                    <div className='bg-Darkblue rounded-2xl w-full absolute top-[2.5rem] px-[1.8rem] py-[1.8rem]'>
-                        <div className='mb-2 flex items-center justify-between '><p className='text-PaleBlue font-semibold text-[1.2rem]'>Work</p><img src={ellipsis} alt="image" /></div>
-                        <div className='flex lg:flex-col items-center justify-between'><p className='text-PaleBlue text-[2rem]'>32hrs</p><p className='text-Desaturatedblue font-medium'>Last week - 36hrs</p></div>
-                    </div>
-            </div>
+            {
+                icons.map((iconItems)=>{
+                    return <div className='rounded-2xl relative overflow-hidden h-[11.3rem]'>
+                                <div className={`flex justify-end item px-[1rem] ${iconItems.color} h-[3.7rem] absolute w-full`}><img className={`w-[4.8rem] absolute -top-[0.6rem]`} src={iconItems.icon} alt="" /></div>
+                                <div className='bg-Darkblue rounded-2xl w-full absolute top-[2.5rem] px-[1.8rem] py-[1.8rem]'>
+                                    <div className='mb-2 flex items-center justify-between '><p className='text-PaleBlue font-semibold text-[1.2rem]'>{iconItems.category}</p><img src={iconItems.ellipsis} alt="image" /></div>
+                                    <div className='flex lg:flex-col items-center justify-between'><p className='text-PaleBlue text-[2rem]'>32hrs</p><p className='text-Desaturatedblue font-medium'>Last week - 36hrs</p></div>
+                                </div>
+                            </div>
+                })
+            }
            </div>
         </div>
     );
