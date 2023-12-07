@@ -18,16 +18,21 @@ function MainComponent() {
                     {id:6,icon:social,category:'Social',time:'2hrs',color:'Violetsocial'},
                     {id:5,icon:selfCare,category:'Self Care',time:'2hrs',color:'Softorangeselfcare'}
                 ]
-    const Jeremy =['Daily','Weekly','Monthly']
+    const JeremyProfile =['Daily','Weekly','Monthly']
+
+
+
+
     return (
         <div className='flex flex-col items-center bg-Verydarkblue'>
            <div className='bg-Darkblue'>
             <div>
-
+                <div></div>
+                <p></p>
             </div>
             <p className='flex lg:flex-col justify-between'>
                 {
-                    Jeremy.map((Jeremy)=>{
+                    JeremyProfile.map((Jeremy)=>{
                         return <span className='text-Desaturatedblue hover:text-PaleBlue'>{Jeremy}</span>
                     })
                 }
