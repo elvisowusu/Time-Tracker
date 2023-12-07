@@ -24,11 +24,11 @@ function MainComponent() {
 
 
     return (
-        <div className='flex flex-col xl:flex-row xl:gap-[1.4rem] items-center bg-Verydarkblue px-[1.5rem] py-[6rem]'>
-           <div className='bg-Darkblue w-[21.4rem] rounded-2xl'>
-                <div className='flex xl:flex-col xl:items-start items-center gap-[0.9rem] bg-BlueColor rounded-2xl px-[1.8rem] py-[2rem]'>
-                    <img className='w-[4.6rem] border-2 rounded-full' src={Jeremy} alt="image" />
-                    <p ><span className='block text-Desaturatedblue font-medium'>Report for </span><span className='text-PaleBlue text-[1.5rem] xl:text-[2.5rem]'>Jeremy Robsom</span></p>
+        <div className='flex flex-col xl:flex-row xl:gap-[1.4rem] items-center justify-center bg-Verydarkblue px-[1.5rem] py-[6rem]'>
+           <div className='bg-Darkblue w-[21.4rem] xl:w-[17rem] rounded-2xl'>
+                <div className='flex items-center gap-[0.9rem] xl:gap-[2rem] bg-BlueColor rounded-2xl px-[1.8rem] py-[2rem] xl:flex-col xl:items-start xl:h-[20rem]'>
+                    <img className='w-[4.6rem] xl:w-[5rem] border-2 rounded-full' src={Jeremy} alt="image" />
+                    <p ><span className='block text-Desaturatedblue font-medium'>Report for </span><span className='text-PaleBlue text-[1.5rem] xl:text-[2.5rem] xl:leading-[3rem]'>Jeremy Robsom</span></p>
                 </div>
                 <p className='jerremyParagraph'>
                     {
