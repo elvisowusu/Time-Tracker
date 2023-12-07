@@ -41,7 +41,7 @@ function MainComponent() {
 
 
 
-           <div className='flex flex-col xl:grid xl:grid-cols-3 gap-[1.3rem] mt-[1.3rem]'>
+           <div className='flex flex-col xl:grid xl:grid-cols-3 gap-[1.3rem] mt-[1.3rem] md:mt-0'>
             {
                 icons.map((iconItems)=>{
                     return <div className='rounded-2xl relative overflow-hidden h-[11.3rem] w-[21.4rem]'>
