@@ -44,11 +44,11 @@ function MainComponent() {
            <div className='flex flex-col xl:grid xl:grid-cols-3 gap-[1.3rem] mt-[1.3rem] md:mt-0'>
             {
                 icons.map((iconItems)=>{
-                    return <div className='rounded-2xl relative overflow-hidden h-[11.3rem] md:h-[13rem] w-[21.4rem]'>
+                    return <div className='rounded-2xl relative overflow-hidden h-[11.3rem] md:h-[16rem] w-[21.4rem] md:w-[18rem]'>
                                 <div className={`flex justify-end item px-[1rem] ${iconItems.color} h-[3.7rem] absolute w-full`}><img className={`w-[4.8rem] absolute -top-[0.6rem]`} src={iconItems.icon} alt="" /></div>
                                 <div className='bg-Darkblue rounded-2xl w-full absolute top-[2.5rem] px-[1.8rem] py-[1.8rem]'>
                                     <div className='mb-2 flex items-center justify-between '><p className='text-PaleBlue font-semibold text-[1.2rem]'>{iconItems.category}</p><img src={ellipsis} alt="image" /></div>
-                                    <div className='flex lg:flex-col items-center justify-between md:items-start'><p className='text-PaleBlue text-[2rem]'>{iconItems.time}</p><p className='text-Desaturatedblue font-medium'>Last week - {iconItems.lastWeek}rs</p></div>
+                                    <div className='flex lg:flex-col items-center justify-between md:items-start'><p className='text-PaleBlue text-[2rem] xl:text-[3.7rem]'>{iconItems.time}</p><p className='text-Desaturatedblue font-medium'>Last week - {iconItems.lastWeek}hrs</p></div>
                                 </div>
                             </div>
                 })
