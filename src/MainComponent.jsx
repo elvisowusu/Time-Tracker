@@ -30,7 +30,7 @@ function MainComponent() {
                     <img className='w-[4.6rem] border-2 rounded-full' src={Jeremy} alt="image" />
                     <p ><span className='block text-Desaturatedblue font-medium'>Report for </span><span className='text-PaleBlue text-[1.5rem] lg:text-[2rem]'>Jeremy Robsom</span></p>
                 </div>
-                <p className='flex lg:flex-col justify-between px-[2rem] py-[1.3rem]'>
+                <p className='flex lg:flex-col items-center justify-between px-[2rem] py-[1.3rem]'>
                     {
                         JeremyProfile.map((Jeremy)=>{
                             return <span className='allText'>{Jeremy}</span>
@@ -45,7 +45,8 @@ function MainComponent() {
             <div className='bg-red-500 rounded-xl relative overflow-hidden h-[15rem]'>
                     <div className='flex justify-end item px-[2rem] bg-Lightredwork h-[3rem] absolute w-full'><img className={`w-[4.1rem] absolute -top-2`} src={work} alt="" /></div>
                     <div className='bg-Darkblue rounded-xl w-full absolute top-[2rem]'>
-                        <div className='flex items-center justify-between'><p>Work</p><img src={ellipsis} alt="image" /></div>
+                        <div className='flex lg:flex-col items-center justify-between px-[2rem]'><p>Work</p><img src={ellipsis} alt="image" /></div>
+                        <div className='flex lg:flex-col items-center justify-between px-[2rem]'><p>32hrs</p><p>Last week - 36hrs</p></div>
                     </div>
             </div>
            </div>
