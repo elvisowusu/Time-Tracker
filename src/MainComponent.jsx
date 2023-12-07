@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import ellipsis from './assets/icon-ellipsis.svg';
 import exercise from './assets/icon-exercise.svg';
 import play from './assets/icon-play.svg';
@@ -10,6 +10,9 @@ import Jeremy from './assets/image-jeremy.png';
 import Aos from 'aos';
 
 function MainComponent() {
+    useEffect(() => {
+        Aos.init({ duration: 1000, offset: 200 });
+    }, []);
 
     const icons =[
                     {id:1,icon:work,category:'Work',time:'32hrs',color:'bg-Lightredwork',lastWeek:'36'},
