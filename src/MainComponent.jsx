@@ -24,8 +24,8 @@ function MainComponent() {
 
 
     return (
-        <div className='flex flex-col items-center bg-Verydarkblue px-[1.5rem] py-[6rem]'>
-           <div className='bg-Darkblue w-full rounded-2xl'>
+        <div className='flex flex-col md:flex-row items-center bg-Verydarkblue px-[1.5rem] py-[6rem]'>
+           <div className='bg-Darkblue w-[21.4rem] rounded-2xl'>
                 <div className='flex items-center gap-[0.9rem] bg-BlueColor rounded-2xl px-[1.8rem] py-[2rem]'>
                     <img className='w-[4.6rem] border-2 rounded-full' src={Jeremy} alt="image" />
                     <p ><span className='block text-Desaturatedblue font-medium'>Report for </span><span className='text-PaleBlue text-[1.5rem] lg:text-[2rem]'>Jeremy Robsom</span></p>
@@ -41,10 +41,10 @@ function MainComponent() {
 
 
 
-           <div className='w-full flex flex-col md:flex-row gap-[1.3rem] mt-[1.3rem]'>
+           <div className='flex flex-col md:grid md:grid-cols-3 gap-[1.3rem] mt-[1.3rem]'>
             {
                 icons.map((iconItems)=>{
-                    return <div className='rounded-2xl relative overflow-hidden h-[11.3rem]'>
+                    return <div className='rounded-2xl relative overflow-hidden h-[11.3rem] w-[21.4rem]'>
                                 <div className={`flex justify-end item px-[1rem] ${iconItems.color} h-[3.7rem] absolute w-full`}><img className={`w-[4.8rem] absolute -top-[0.6rem]`} src={iconItems.icon} alt="" /></div>
                                 <div className='bg-Darkblue rounded-2xl w-full absolute top-[2.5rem] px-[1.8rem] py-[1.8rem]'>
                                     <div className='mb-2 flex items-center justify-between '><p className='text-PaleBlue font-semibold text-[1.2rem]'>{iconItems.category}</p><img src={ellipsis} alt="image" /></div>
