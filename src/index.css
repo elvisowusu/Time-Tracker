@@ -3,3 +3,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components{
+    .allText{
+        @apply text-Desaturatedblue hover:text-PaleBlue font-medium;
+    }
+}
