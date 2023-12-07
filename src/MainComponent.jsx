@@ -11,12 +11,12 @@ import Jeremy from './assets/image-jeremy.png';
 function MainComponent() {
 
     const icons =[
-                    {id:1,icon:work,category:'Work',time:'32hrs',color:'Lightredwork'},
-                    {id:2,icon:play,category:'Play',time:'10hrs',color:'Softblueplay'},
-                    {id:3,icon:study,category:'Study',time:'4hrs',color:'Lightredstudy'},
-                    {id:4,icon:exercise,category:'Exercise',time:'4hrs',color:'Limegreenexercise'},
-                    {id:6,icon:social,category:'Social',time:'2hrs',color:'Violetsocial'},
-                    {id:5,icon:selfCare,category:'Self Care',time:'2hrs',color:'Softorangeselfcare'}
+                    {id:1,icon:work,category:'Work',time:'32hrs',color:'Lightredwork',ellipsis:ellipsis},
+                    {id:2,icon:play,category:'Play',time:'10hrs',color:'Softblueplay',ellipsis:ellipsis},
+                    {id:3,icon:study,category:'Study',time:'4hrs',color:'Lightredstudy',ellipsis:ellipsis},
+                    {id:4,icon:exercise,category:'Exercise',time:'4hrs',color:'Limegreenexercise',ellipsis:ellipsis},
+                    {id:6,icon:social,category:'Social',time:'2hrs',color:'Violetsocial',ellipsis:ellipsis},
+                    {id:5,icon:selfCare,category:'Self Care',time:'2hrs',color:'Softorangeselfcare',ellipsis:ellipsis}
                 ]
     const JeremyProfile =['Daily','Weekly','Monthly']
 
@@ -41,9 +41,12 @@ function MainComponent() {
 
 
 
-           <div className='lg:grid-cols-3'>
-            <div>
-
+           <div className='w-full lg:grid-cols-3'>
+            <div className='relative bg-Lightredwork'>
+                    <img src={work} alt="" />
+                    <div className=''>
+                        <div className='flex items-center justify-between'><p>Work</p><img src={ellipsis} alt="" /></div>
+                    </div>
             </div>
            </div>
         </div>
